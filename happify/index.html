@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>User Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="img/TopBar.png" alt="top of phone">
+    </header>
+    <main>
+        <div class="profile-pic">
+            <img src="img/proimg.png" alt="Profile Picture">
+        </div>
+        <div id="namegen">
+            <h2>Eva Marsh</h2>
+            <h3>She/Her</h3>
+            <br>
+        </div>
+        <div class="user-info">
+            <h3>Email Address</h3>
+            <p>eve.marsh@outlook.com</p>
+            <h3>Date Of Birth</h3>
+            <p>September 2, 1992</p>
+            <h3>Address</h3>
+            <p>123 Eglinton Avenue, Toronto, ON, A1B 2C3</p>
+            <h3>Phone Number</h3>
+            <p>+1 (234) 567-8910</p>
+            <h3>Emergency Contact</h3>
+            <p>Elspeth Marsh - Mother - +1 (432) 765-0198</p>
+            <br>
+            <button id="logoutButton">Log Out</button>
+            <br>
+        </div>
+    </main>
+    <footer>
+        <img id="navbottom" src="img/NavBar.png" alt="bottom nav">
+    </footer>
+    <script>
+        const logoutButton = document.querySelector('#logoutButton');
+        logoutButton.addEventListener('click', function () {
+            window.location.href = 'mainScreen.html';
+        });
+    </script>
+</body>
+
+</html>

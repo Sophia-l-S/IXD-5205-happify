@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Main Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="img/TopBar.png" alt="top of phone">
+    </header>
+    <main>
+        <img id="logo" src="img/happifylogo.png" alt="Profile Picture">
+
+        <div id="Empower">
+            <br>
+            <p>Empower your mind. Elevate your wellbeing.</p>
+            <br>
+        </div>
+
+        <div class="form-container">
+            <h2>Login</h2>
+            <br>
+            <form>
+                <div id="textinput">
+                    <input type="text" placeholder="Email" name="email" required>
+
+                    <input type="password" placeholder="Password" name="password" required>
+                </div>
+                <div class="form-options">
+                    <div class="forgot-password">
+                        <a id="forgot" href="#">Forgot Password?</a>
+                        <br>
+                    </div>
+
+                    <div class="remember-me">
+                        <label>
+                            <input type="checkbox" name="remember-me"> Remember me
+                        </label>
+                    </div>
+                </div>
+
+                <button id="login" type="submit">Login</button>
+
+                <br>
+                <p>Not a Member?</p>
+                <a id="become" href="#">Become a Member Today</a>
+            </form>
+        </div>
+    </main>
+    <script>
+        const login = document.querySelector('#login');
+        login.addEventListener('click', function () {
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+
+</html>
