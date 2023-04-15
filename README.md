@@ -1,2 +1,3 @@
 # IXD-5205-happify
-IXD-5205 happify app
+This is the html, css, and Javascript for my IXD-5205 happify app
+
